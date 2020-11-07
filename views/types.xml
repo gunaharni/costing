@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="types_tree_view" model='ir.ui.view'>
+            <field name="name">costing.types.tree</field>
+            <field name="model">costing.types</field>
+            <field name="arch" type="xml">
+                <tree string ="Costing Types">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+    </record>
+    <record id="types_form_view" model='ir.ui.view'>
+            <field name="name">costing.types.form</field>
+            <field name="model">costing.types</field>
+            <field name="arch" type="xml">
+                    <form string ="Costing Types">
+                        <sheet>
+                                <group>
+                                    <field name="name" />
+                                </group>
+                        </sheet>
+                    </form>
+            </field>
+    </record>
+    <record id="action_types" model="ir.actions.act_window">
+    <field name="name">Costing Types</field>
+    <field name="type">ir.actions.act_window</field>
+         <field name="res_model">costing.types</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your courses record Here!
+                </p>
+            </field>
+    </record>
+</odoo>

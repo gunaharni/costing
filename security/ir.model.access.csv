@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_costing_types,access.costing.types,model_costing_types,,1,1,1,1
+access_costing_stages,access.costing.stages,model_costing_stages,,1,1,1,1
+access_costing_approval,access.costing.approval,model_costing_approval,,1,1,1,1
+access_costing_cost,access.costing.cost,model_costing_cost,,1,1,1,1
+access_costing_cost_sheet_lines,access.costing.cost_sheet_lines,model_costing_cost_sheet_lines,,1,1,1,1
